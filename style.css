@@ -1,0 +1,204 @@
+html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.card {
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    z-index: 1;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 hsl(0, 0%, 0%, 0.2);
+    padding-top: 10px;
+    text-align: center;
+    height: 500px;
+    width: 80%;
+    margin-left: 20px;
+    background-position-x: -400px;
+    background-position-y: -200px;
+    background-size: 780px;
+}
+
+.mobile--accordion {
+    display: none;
+}
+
+.desktop--accordion {
+    background-image: url("./images/illustration-desktop.svg");
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 400px;
+    margin-top: 40px;
+    background-position: -75px 0px;
+    flex: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+#accordion {
+    flex: 50%;
+    padding: 50px;
+    margin: 0 30px;
+    text-align: left;
+    margin-left: 40%;
+}
+
+
+#accordion input {
+    display: none;
+}
+
+#accordion input[type="radio"]:checked+.content .answer {
+    max-height: 300px;
+}
+
+#accordion input[type="radio"]:checked+.content .question {
+    font-weight: 600;
+    color: hsl(238, 29%, 16%);
+}
+
+.faq--body {
+    border-bottom: solid 1px hsl(240, 5%, 91%);
+    padding: 15px 0px;
+}
+
+.question {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 2px;
+    color: hsl(240, 6%, 50%);
+}
+
+.question:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+#accordion .answer {
+    overflow: hidden;
+    max-height: 0;
+    cursor: pointer;
+    transition: max-height .3s;
+    color: hsl(240, 6%, 50%);
+    font-size: 13px;
+}
+
+.fa-solid {
+    float: right;
+    padding-right: 15px;
+    color: hsl(14, 88%, 65%);
+    font-size: 12px;
+}
+
+#accordion input[type="radio"]:checked+.content .fa-solid {
+    transform: rotate(180deg);
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.box {
+    display: block;
+    position: absolute;
+    top: 260px;
+    left: 45px;
+    background-image: url("./images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 170px;
+    height: 150px;
+    width: 150px;
+    z-index: 3;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        position: absolute;
+        background-image: url("./images/bg-pattern-mobile.svg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        left: 20px;
+        top: 20%;
+        background-size: 250px;
+        box-shadow: 0 4px 8px 0 hsl(0, 0%, 0%, 0.2);
+        padding-top: 110px;
+        height: auto;
+        width: 80%;
+    }
+
+    .header {
+        height: 120px;
+    }
+
+    .faq--body {
+        padding: 10px 0px;
+    }
+
+    .mobile--accordion {
+        background-image: url("./images/illustration-mobile.svg");
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        left: 108px;
+        height: 30%;
+        width: 90%;
+        top: 10px;
+        z-index: 2;
+    }
+
+    #accordion {
+        padding: 0px 0px 50px 0px;
+        margin-left: 30px;
+    }
+
+    #accordion input[type="radio"]:checked+.content .fa-solid {
+        padding-left: 0;
+    }
+
+    .desktop--accordion {
+        display: none;
+    }
+
+    .box {
+        display: none;
+    }
+
+    .faq--header {
+        text-align: center;
+        color: hsl(238, 29%, 16%);
+        font-weight: 700;
+        font-size: 32px;
+    }
+
+    .answer--text {
+        padding-right: 50px;
+    }
+
+    .fa-solid {
+        padding-right: 0;
+    }
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px;
+    justify-content: center;
+    font-size: 11px;
+    left: auto;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}

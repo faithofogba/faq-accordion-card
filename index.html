@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="mobile--accordion"></div>
+        <div class="box"></div>
+        <div class="card">
+            <div class="desktop--accordion"></div>
+            <section id="accordion">
+                <h1 class="faq--header">FAQ</h1>
+                <div class="faq--body">
+                    <input type="radio" name="accordion" id="one">
+                    <div class="content">
+                        <label for="one" class="question">
+                            How many team members can I invite?
+                            <i class="fa-solid fa-angle-down"></i>
+                        </label>
+                        <div class="answer">
+                            <p class="answer--text">
+                                You can invite up to 2 additional users on the Free plan. There
+                                is no limit on team members for the Premium plan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq--body">
+                    <input type="radio" name="accordion" id="two" checked>
+                    <div class="content">
+                        <label for="two" class="question">
+                            What is the maximum file upload size?
+                            <i class="fa-solid fa-angle-down"></i>
+                        </label>
+                        <div class="answer">
+                            <p class="answer--text">
+                                No more than 2GB. All files in your account must fit your
+                                allotted storage space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq--body">
+                    <input type="radio" name="accordion" id="three">
+                    <div class="content">
+                        <label for="three" class="question">
+                            How do I reset my password?
+                            <i class="fa-solid fa-angle-down"></i>
+                        </label>
+                        <div class="answer">
+                            <p class="answer--text">
+                                Click “Forgot password” from the login page or “Change password”
+                                from your profile page. A reset link will be emailed to you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq--body">
+                    <input type="radio" name="accordion" id="four">
+                    <div class="content">
+                        <label for="four" class="question">
+                            Can I cancel my subscription?
+                            <i class="fa-solid fa-angle-down"></i>
+                        </label>
+                        <div class="answer">
+                            <p class="answer--text">
+                                Yes! Send us a message and we&apos;ll process your request no
+                                questions asked.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq--body">
+                    <input type="radio" name="accordion" id="five">
+                    <div class="content">
+                        <label for="five" class="question">
+                            Do you provide additional support?
+                            <i class="fa-solid fa-angle-down"></i>
+                        </label>
+                        <div class="answer">
+                            <p class="answer--text">
+                                Chat and email support is available 24/7. Phone lines are open
+                                during normal business hours.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Faith Ofogba</a>.
+    </footer>
+
+    <script src="https://kit.fontawesome.com/4ba198f83f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
